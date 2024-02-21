@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Llantas</title>
+  <link rel="stylesheet" 
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <?php
+      $precioBase = 800;
+      $precioDescuento = 700;
+
+      $cantidadLlantasMas5 = 7;
+      $descuentoPorcentajeMas5 = 100 - ($precioDescuento / $precioBase) * 100;
+      $totalPagarMas5 = $cantidadLlantasMas5 * $precioDescuento;
+
+      echo "<h4>Precio original por llanta: $precioBase dolares</h4>";
+      echo "<h4>Precio con descuento por llanta (comprando mas de 5): $precioDescuento dolares</h4>";
+      echo "<h4>Total a pagar por $cantidadLlantasMas5 llantas: $totalPagarMas5 dolares</h4>";
+      echo "<h4>Descuento aplicado: $descuentoPorcentajeMas5 %</h4>";
+      ?>
+    </div>
+    <div class="col-md-6">
+      <?php
+      $cantidadLlantasMenos5 = 4;
+      $descuentoPorcentajeMenos5 = 0;
+      $totalPagarMenos5 = $cantidadLlantasMenos5 * $precioBase;
+
+      echo "<h4>Precio original por llanta: $precioBase dolares</h4>";
+      echo "<h4>Precio con descuento por llanta (comprando menos de 5): $precioBase dolares</h4>";
+      echo "<h4>Total a pagar por $cantidadLlantasMenos5 llantas: $totalPagarMenos5 dolares</h4>";
+      echo "<h4>Descuento aplicado: $descuentoPorcentajeMenos5 %</h4>";
+      ?>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Formulario en HTML</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+
+        section {
+            margin: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="color: #fff;">Formulario en HTML</h1>
+    </header>
+
+    <nav>
+        <a href="uno.php">UNO</a>
+    </nav>
+
+    <section>
+        <?php
+        echo "<p>Salida por pantalla</p>";
+        $a = 5;
+        echo "<p>El valor de a es $a.</p>";
+        ?>
+    </section>
+
+</body>
+</html>
