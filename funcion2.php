@@ -10,8 +10,8 @@ function operaciones($n1, $n2, $operacion){
     }
     return $resultado; 
 }
-$r = operaciones(5, 7,) "sumar";
+$r = operaciones(5, 7, "sumar");
 echo $r . "<br>";
 
-echo operaciones(15,8,) "resta";
+echo operaciones(15,8, "resta");
 ?>
