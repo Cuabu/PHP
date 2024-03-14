@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+    <title>Datos de Médicos</title>
+</head>
+<body>
+    <h2>BD CITAS - Datos de la tabla médicos</h2>
+    <h3>Por favor ingrese el número del documento de identidad del médico</h3>
+    <form id="formulario" method="post" action="datosMYSql.php">
+        <label for="Identificación">Identificación:</label>
+        <input type="text" name="Identificación" id="MEDIdentificacion" value="" required>
+        <div class="input">
+            <input type="submit" value="Consultar médicos">
+            <input type="reset" value="Borrar formulario">
+        </div>
+    </form>
+</body>
+</html>
